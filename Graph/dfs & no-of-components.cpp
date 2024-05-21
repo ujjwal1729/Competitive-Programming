@@ -19,23 +19,19 @@ int main(){
     cin >> n >> e;
     edges.assign(n+1,vector<ll>());
     component.assign(n+1,0);
+    visited.assign(n+1,false);
+    ll count=0;
+
     fr(1,e+1,i){
         ll a,b;
         cin >> a >> b;
         edges[a].pb(b);
         edges[b].pb(a);
     }
-    visited.assign(n+1,false);
-    ll count=0;
-    ll prev;
-    vector<pair<ll,ll>>ans;
+
     fr(1,n+1,i){
         if(visited[i] == false) {
             count++;
             dfs(i,0,count);
-            if(i!=1){
-                ans.pb({i,prev});
-            }
-            prev=i;
         }
     }   
