@@ -1,14 +1,14 @@
 //bfs and to find the shortest distance as well as the path between two nodes
 // cses : message route
 
-vector<ll>ans;
 vector<vector<ll>>edges;
 vector<bool>visited;
 queue<ll>q;
-
 vector<ll>previous;
-ll countans=0;
 
+//these are specific for shortest_distance
+ll countans=0;
+vector<ll>ans;
  
 void shortest_distance(ll start,ll finish){
     ll curr = finish;
