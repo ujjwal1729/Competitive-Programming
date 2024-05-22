@@ -1,3 +1,6 @@
+//detecting whether there is a cycle or not in a directed cyclic graph
+// CSES : Rount Trip 2
+
 ll n,e;
 vector<vector<ll>>edges;
 vector<ll>color;
