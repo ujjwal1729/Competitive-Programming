@@ -1,5 +1,6 @@
 //shortest path, single source
 // cses : shortest routes1
+//O(VlogV + ElogV)
 
 ll n,e;
 vector<vector<pair<ll,ll>>>edges;
