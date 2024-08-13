@@ -15,6 +15,7 @@ vector<vector<ll>> mat_mul(vector<vector<ll>>a,vector<vector<ll>>b){
     return prod;
 }
 
+// done only for square matrix n*n 
 vector<vector<ll>> matexp(vector<vector<ll>>a, ll n){
     vector<vector<ll>> out(a.size(), vector<ll>(a.size(),0));
     fr(0,a.size(),i) out[i][i] = 1;
