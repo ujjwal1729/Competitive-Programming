@@ -1,3 +1,6 @@
+// works in approx O(1) ,dont go into proof.
+// A single get function may take O(log n).
+
 struct UnionFind {
 	int n;
 	vector<int> parent;      
